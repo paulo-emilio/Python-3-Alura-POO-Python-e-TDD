@@ -1,4 +1,4 @@
-# Concertando o bytebank_original da Dominique
+# Consertando o bytebank_original da Dominique
 from datetime import date
 
 

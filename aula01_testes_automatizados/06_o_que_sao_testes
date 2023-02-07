@@ -33,12 +33,15 @@ contínua de código.
 
 A seguir, vamos comentar sobre os tipos de testes.
 
-Os testes unitários são responsáveis por averiguar o funcionamento de pequenas partes da aplicação
+Os testes unitários:
+são responsáveis por averiguar o funcionamento de pequenas partes da aplicação
 (as menores unidades de um código), como um método ou uma classe.
 
-Os testes de integração, como o nome sugere, verificam a integração entre essas unidades menores que compõem o projeto,
+Os testes de integração:
+como o nome sugere, verificam a integração entre essas unidades menores que compõem o projeto,
 isto é, os trechos que testamos individualmente nos testes unitários.
 
-Os testes de ponta a ponta (End-to-End — E2E) aferem o bom funcionamento da aplicação inteira, desde o início
+Os testes de ponta a ponta (End-to-End — E2E):
+aferem o bom funcionamento da aplicação inteira, desde o início
 até o final. Muitas vezes, esse teste simula o usuário da aplicação e o ambiente de produção em que o produto
 será colocado. Trata-se de um teste mais abrangente, que compreende todo o processo da aplicação.

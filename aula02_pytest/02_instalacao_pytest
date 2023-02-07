@@ -1,0 +1,17 @@
+Pytest: Framework especializado em testes
+    - Multiplos Plugins
+    - Altamente Escalável
+    - Utilização Simples
+
+No terminal:
+    pip install pytest==7.1.2  (7.1.2 - versão)
+
+Boas práticas:
+    Salvar em um arquivo .txt uma lista com todos pacotes instalados necessários para rodar o projeto
+    pip freeze -> mostra todos pacotes instalados
+    pip freeze > requirements.txt   -> cria um arquivo com os pacotes instaldos
+
+Para usar o pytest:
+    criar um pacote com nome de 'tests' (necessário ter __init__)
+                                      porque esse diretório de testes é um módulo
+    criar um .py dentro desse pacote que será utilizado para os testes

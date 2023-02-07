@@ -1,4 +1,6 @@
+# Concertando o bytebank_original da Dominique
 from datetime import date
+
 
 class Funcionario:
     def __init__(self, nome, data_nascimento, salario):
@@ -15,8 +17,10 @@ class Funcionario:
         return self._salario
 
     def idade(self):
+        data_nasc_quebrada = self._data_nascimento.split('/')
+        ano_nasc = data_nasc_quebrada[-1]
         ano_atual = date.today().year
-        return ano_atual - int(self._data_nascimento)
+        return ano_atual - int(ano_nasc)
 
     def calcular_bonus(self):
         valor = self._salario * 0.1

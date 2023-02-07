@@ -1,0 +1,44 @@
+O teste verifica se cada funcionalidade está se comportando como deveria, garantindo um desempenho de maior
+qualidade dos códigos. Inclusive, há pessoas que são contratadas para se dedicarem em tempo integral apenas
+a esses procedimentos! Os testers são responsáveis por aplicar testes em códigos de outras pessoas desenvolvedoras,
+executando os famosos testes manuais.
+
+O teste manual apresenta algumas desvantagens em relação ao automático. Primeiramente, ele é um processo mais lento e
+trabalhoso, visto que é uma pessoa quem o realizará. Ela precisa visualizar e interpretar o código, analisar as regras
+de negócio e elaborar algoritmos que testarão a funcionalidade específica. Por conta desse fator humano, os testes
+manuais também estão sujeitos a falhas.
+
+Por outro lado, um tester é capaz de observar a especificidade de cada projeto em particular. Este é o grande mérito
+dos testes manuais: uma pessoa encarregada exclusivamente de testes examinará minuciosamente os processos envolvidos
+no código.
+
+Ademais, construir testes manuais pode ser bastante inconveniente. Uma vez que a pessoa dev está desenvolvendo um
+projeto, é inoportuno interromper esse avanço para produzir testes manuais para todas as funcionalidades existentes.
+Ainda mais se já soubermos que o código está funcionando.
+
+Em contrapartida, o teste automatizado possui várias características interessantes. A primeira vantagem é ser
+automatizado. Uma vez desenvolvido, é necessário apenas informar o valor que a função receberá e o valor esperado
+como retorno. O restante do processo é automático, não será preciso alocar tanta atenção a ele.
+
+Além disso, o feedback é rápido. Com a execução dos testes, obtemos rapidamente o retorno com os pontos de melhorias
+do código.
+
+Outra vantagem é a segurança na alteração do código. Como os testes automatizados definem as regras de negócio que
+o projeto deve obedecer, há maior segurança ao trabalhar com um código que nunca vimos antes e modificá-lo
+(fazendo uma migração de um padrão de projeto para outro, por exemplo). Contanto que o novo código continue obedecendo
+às mesmas regras do código antigo, temos maior liberdade para alterá-lo sem problemas.
+
+Dessa forma, os testes automatizados influenciam a cultura da refatoração (refactoring), incentivando a melhoria
+contínua de código.
+
+A seguir, vamos comentar sobre os tipos de testes.
+
+Os testes unitários são responsáveis por averiguar o funcionamento de pequenas partes da aplicação
+(as menores unidades de um código), como um método ou uma classe.
+
+Os testes de integração, como o nome sugere, verificam a integração entre essas unidades menores que compõem o projeto,
+isto é, os trechos que testamos individualmente nos testes unitários.
+
+Os testes de ponta a ponta (End-to-End — E2E) aferem o bom funcionamento da aplicação inteira, desde o início
+até o final. Muitas vezes, esse teste simula o usuário da aplicação e o ambiente de produção em que o produto
+será colocado. Trata-se de um teste mais abrangente, que compreende todo o processo da aplicação.

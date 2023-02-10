@@ -1,0 +1,14 @@
+Foi criado o metodo idade em 'bytebank':
+    def idade(self):
+        data_nasc_quebrada = self._data_nascimento.split('/')
+        ano_nasc = data_nasc_quebrada[-1]
+        ano_atual = date.today().year
+        return ano_atual - int(ano_nasc)
+
+Foi criado o teste em 'test_bytebank':
+    def test_quando_sobrenome_recebe_Darth_Loki_deve_retornar_Loki(self):
+        entrada = '  Darth   Loki  '  # Given
+        esperado = 'Loki'
+        funcionario_teste = Funcionario(entrada, '08/08/1888', 8888)
+        resultado = funcionario_teste.sobrenome()  # When
+        assert resultado == esperado  # Then

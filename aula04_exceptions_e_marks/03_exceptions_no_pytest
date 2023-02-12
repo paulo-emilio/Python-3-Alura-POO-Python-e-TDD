@@ -1,0 +1,15 @@
+-> Criado o teste:
+    def test_quando_calcular_bonus_recebe_9999999_deve_retornar_exception(self):
+        with pytest.raises(Exception):
+            entrada = 9999999  # given
+
+            funcionario_teste = Funcionario('Teste', '10/10/1910', entrada)
+            resultado = funcionario_teste.calcular_bonus()  # when
+
+            assert resultado  # then
+    # ao criar 'with pytest.raises(Exception):' o pytest automaticamente espera que o retorno seja uma excessão
+    # se uma excessão for retornada, o teste é validado
+
+
+-> Importado pytest em test_bytebank
+import pytest para funcionar with pytest.raises

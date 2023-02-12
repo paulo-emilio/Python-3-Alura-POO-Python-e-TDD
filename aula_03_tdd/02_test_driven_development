@@ -1,0 +1,5 @@
+No TDD primeiro é criado e teste, depois seguimos para implementação do código,
+depois refatoramos, criamos mais testes, depois códigos, refatoração...
+Ciclo:
+Testes --> Código --> Refatoração
+   ^-----------------------'

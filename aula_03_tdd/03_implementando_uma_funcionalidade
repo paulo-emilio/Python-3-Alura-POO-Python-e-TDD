@@ -1,0 +1,18 @@
+Primeiro foi criado o teste:
+    def test_quando_decrescimo_salario_recebe_100000_deve_retornar_90000(self):
+        entrada_salario = 100000  # Given
+        entrada_nome = 'Paulo Bragança'  # Given
+        esperado = 90000
+
+        funcionario_teste = Funcionario(entrada_nome, '10/08/1988', entrada_salario)
+        funcionario_teste.decrescimo_salario()  # When
+        resultado = funcionario_teste.salario
+
+        assert resultado == esperado  # Then
+
+Depois foi criado o método:
+    def decrescimo_salario(self):
+        sobrenomes = ['Bragança', 'Windsor', 'Bourbon', 'Yamato', 'Al Saud', 'Khan', 'Tudor', 'Ptolomeu']
+        if self._salario >= 100000 and (self.sobrenome() in sobrenomes):
+            decrescimo = self._salario * 0.1
+            self._salario = self._salario - decrescimo

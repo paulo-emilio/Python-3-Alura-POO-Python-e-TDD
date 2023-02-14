@@ -1,0 +1,17 @@
+|pytest --cov=codigo tests/|
+obs: está retornando só 95% de cobertura
+
+Descobrindo os termos faltantes:
+|pytest --cov=codigo tests/ --cov-report term-missing|
+isso mostra qual linha está faltando ser testada, depois de descoberta é só criar um teste para ela
+nesse caso faltava o teste do método __str__, criei o teste:
+'''
+    def test_retorno_str(self):
+        nome, data_nascimento, salario = 'Darth', '06/06/1666', 666  # given
+        esperado = f'Funcionario(Darth, 06/06/1666, 666)'
+
+        funcionario_teste = Funcionario(nome, data_nascimento, salario)
+        resultado = funcionario_teste.__str__()  # when
+
+        assert esperado == resultado  # then
+'''

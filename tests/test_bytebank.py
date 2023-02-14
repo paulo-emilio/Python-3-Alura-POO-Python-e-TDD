@@ -18,6 +18,15 @@ class TestClass:
         resultado = funcionario_teste.sobrenome()  # When
         assert resultado == esperado  # Then
 
+    def test_quando_sobrenome_recebe_Darth_deve_retornar_sem_sobrenome(self):
+        entrada = 'Darth'  # given
+        esperado = '*sem_sobrenome*'
+        teste_funcionrio = Funcionario(entrada, '10/10/1910', 666.66)
+
+        resultado = teste_funcionrio.sobrenome()  # when
+
+        assert esperado == resultado  # then
+
     def test_quando_decrescimo_salario_recebe_100000_deve_retornar_90000(self):
         entrada_salario = 100000  # Given
         entrada_nome = 'Paulo Bragança'  # Given
@@ -48,3 +57,12 @@ class TestClass:
             resultado = funcionario_teste.calcular_bonus()  # when
 
             assert resultado  # then
+
+    def test_retorno_str(self):
+        nome, data_nascimento, salario = 'Darth', '06/06/1666', 666  # given
+        esperado = f'Funcionario(Darth, 06/06/1666, 666)'
+
+        funcionario_teste = Funcionario(nome, data_nascimento, salario)
+        resultado = funcionario_teste.__str__()  # when
+
+        assert esperado == resultado  # then

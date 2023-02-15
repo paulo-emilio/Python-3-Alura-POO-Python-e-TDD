@@ -1,7 +1,7 @@
 |pytest --cov=codigo tests/|
 obs: está retornando só 95% de cobertura
 
-Descobrindo os termos faltantes:
+todo/  Descobrindo os termos faltantes:
 |pytest --cov=codigo tests/ --cov-report term-missing|
 isso mostra qual linha está faltando ser testada, depois de descoberta é só criar um teste para ela
 nesse caso faltava o teste do método __str__, criei o teste:
@@ -15,3 +15,5 @@ nesse caso faltava o teste do método __str__, criei o teste:
 
         assert esperado == resultado  # then
 '''
+obs: esse teste foi apagado, pois não faz sentido um teste para testar a linguagem python,
+     sendo que esse método é criado a partir de um que já existe na linguagem

@@ -1,4 +1,4 @@
-criando testes em 'test_bytebank'
+todo/  Criando testes em 'test_bytebank'
 obs: além do pacote precisar chamar 'test' o .py tbm precisa começar com 'test'
 obs: toda classe de teste deve ser criado com nome inicial test_
 o pytest só reconhece se o nome for esse
@@ -7,5 +7,5 @@ metodologia ágil usada:
 Given-When-Then  (contexto)-(ação)-(desfecho)
 Given something... When something... Then something...
 
-para rodar todos testes que estão em testes:
+todo/  para rodar todos testes que estão em testes:
 comando pytest -v no Terminal

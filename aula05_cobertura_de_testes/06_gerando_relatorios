@@ -1,0 +1,23 @@
+todo/  Diminuindo o código |pytest --cov=codigo tests/ --cov-report html|:
+no arquivo .coverage, abaixo de [run]: |source = ./codigo|
+depois disso para rodar o comando é o simples: |pytest --cov|
+
+todo/  Criando um relatório personalizado:
+no arquivo .coverage, embaixo:
+[html]
+directory = coverage_relatorio_html
+
+todo/  Fazendo com que quando executar |pytest --cov| o terminal mostre tanto testes quanto o report
+pois até então só me mostra o relatorio, dizendo que passou em tantos testes,
+mas não mostra os testes
+No arquivo pytest.ini, abaixo de [pytest]:
+addopts = -v --cov=codigo tests/ --cov-report term-missing
+Isso faz com que o terminal adote esse código quando digitado simplesmente |pytest|
+
+todo/  Gerando um relatório .xml, que é o padrão do mercado:
+|pytest --junitxml report.xml|
+(junit é a ferramenta de testes do Java, que estabeleceu esse padrão)
+(report.xml é o nome que quis dar ao arquivo)
+
+todo/  Relatório do coverage:
+|pytest --cov-report xml|

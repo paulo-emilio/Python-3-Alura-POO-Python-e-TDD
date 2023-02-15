@@ -57,12 +57,3 @@ class TestClass:
             resultado = funcionario_teste.calcular_bonus()  # when
 
             assert resultado  # then
-
-    def test_retorno_str(self):
-        nome, data_nascimento, salario = 'Darth', '06/06/1666', 666  # given
-        esperado = f'Funcionario(Darth, 06/06/1666, 666)'
-
-        funcionario_teste = Funcionario(nome, data_nascimento, salario)
-        resultado = funcionario_teste.__str__()  # when
-
-        assert esperado == resultado  # then

@@ -1,0 +1,19 @@
+todo/  Criando o htmlcov:
+|pytest --cov=codigo tests/ --cov-report html|
+Cria um diretório com vários arquivos.
+1 deles: index.html, bastante útil quando aberto com o navegador
+
+todo/  Criando o arquivo .coveragerc:
+New > File > .coveragerc
+Esse é um arquivo como o pytest.ini, ele também toma precedente em cima das
+         configurações báscias do pytest, só que específico para o coverage
+Com esse arquivo podemos configurar as linhas que vão ser 'excluídas' do report (relatório)
+Lá no arquivo foi criado:
+'''
+[run]
+
+[report]
+exclude_lines =
+    def __str__
+'''
+a linha que possuir 'def __str__' será ignorada

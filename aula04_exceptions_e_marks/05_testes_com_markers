@@ -1,15 +1,15 @@
-Como slecionar somente um teste para rodar:
+todo/  Como slecionar somente um teste para rodar:
 
-1 -(o Pycharm nos deixa fazer isso atraves de cliques no teste)
+todo/  1 -(o Pycharm nos deixa fazer isso atraves de cliques no teste)
 
 Mas e outras IDES, outros ambientes? Vamos lá:
 
-2 - No terminal: |pytest -k _____|
+todo/  2 - No terminal: |pytest -k _____|
 Isso vai selecionar somente os testes que contenham a palavra escrita na frente no seu nome
 ex: |pytest -k idade| (Roda somente o teste que contém 'idade' em seu nome
 Melhor ainda: |pytest - v -k idade|
 
-3 - Markers:
+todo/  3 - Markers:
 from pytest import mark  (ou somente usar |pytest.mark....| já que pytest já esta importado.
 ex: quero que somente os testes que cantem calcular bonus sejam executados:
 criar um decorator antes de todos testes que contem calcular bonus:
@@ -23,7 +23,7 @@ Como saber quais são: no terminal |pytest -- markers|
 ex: |@mark.skip| que executa todos menos esse
 obs: ver a documentação do pytest
 
-como tirar esses warnings:
+todo/  Como tirar esses warnings:
 Criando um arquivo chamado: pytest.ini
 esse arquivo vai fazer com que tudo que seja escrito nele seja visto primeiro,
 antes de executar a documentação normal do pytest

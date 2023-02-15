@@ -1,10 +1,10 @@
-Ferramenta de cobertura de testes:
+todo/  Ferramenta de cobertura de testes:
 Instalando extensão do pytest -> pytest-cov
 |pip install pytest-cov==3.0.0|
  # lembrar de atualizar o requirements.txt
  # |pip freeze > requirements.txt|
 
-Usando o pytest-cov:
+todo/  Usando o pytest-cov:
 |pytest --cov|
 Fazendo os testes só no bytebank.py:
 |pytest --cov=codigo tests/|
